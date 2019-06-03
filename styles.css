@@ -1,0 +1,64 @@
+:root{
+    --color1:hsl(109, 49%, 50%);
+    --color5:hsl(123, 51%, 27%);
+    --color6:hsl(126, 25%, 57%);
+    --color9:hsl(199, 80%, 66%);
+    --text-desciption:'Roboto Mono', monospace;
+    --text-title: 'Open Sans', sans-serif;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(45deg, var(--color1), var(--color6),var(--color9) );
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+}
+.main{
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.5rem;
+}
+.title{
+    line-height: 1.5;
+}
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--text-title);
+}
+h2{
+    font-size: 2rem; 
+    margin-bottom: .8rem;
+    width: 22rem;
+    font-family: var(--text-title) ;
+    text-decoration-line: line-through;
+}
+p{
+    font-family:  var(--text-desciption);
+}
+.img{
+    height: 25vh;
+    width: 25vh;
+}
+section::before{
+    content: '';
+    background: url(img/logout.svg);
+    background-size: contain;
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+}
+a{
+   font-family: var(--text-desciption);
+   text-decoration: none;
+   color: var(--color5);
+}
+a:hover{
+    color: white;
+}
